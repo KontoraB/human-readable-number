@@ -8,3 +8,4 @@ module.exports = function toReadable (number) {
   if (number < 100) { return arrayTwo[Math.floor(number / 10) - 2] + (number % 10 !== 0 ? " " + toReadable(number % 10) : "");}
 
   if (number < 1000) {return arrayOne[Math.floor(number / 100)] + " hundred" + (number % 100 !== 0 ? " " + toReadable(number % 100) : "");}
+}
